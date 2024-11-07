@@ -1,0 +1,55 @@
+@keyframes imagean {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes bottomIn {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    33% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    66% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Set different animation delays for each image */
+.slider .slide:nth-child(1) {
+    animation-delay: 1s;
+}
+.slider .slide:nth-child(2) {
+    animation-delay: 2s;
+}
+  
